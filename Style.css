@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#071330,#121d4d);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.container{
+    width:600px;
+}
+
+.timer-box{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+}
+
+.tabs{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.tabs button{
+    background:none;
+    border:none;
+    color:white;
+    cursor:pointer;
+    padding:10px;
+}
+
+.tabs .active{
+    background:#4d5cff;
+    border-radius:10px;
+}
+
+h1{
+    font-size:90px;
+    margin:20px 0;
+}
+
+.switch{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+#startBtn{
+    background:linear-gradient(to right,#d37cff,#6b9fff);
+    color:white;
+    border:none;
+    padding:12px 40px;
+    border-radius:25px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.tarefa-atual{
+    margin:25px 0;
+    text-align:center;
+}
+
+.lista h2{
+    margin-bottom:15px;
+}
+
+.add-task{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.add-task input{
+    flex:1;
+    padding:10px;
+    border-radius:10px;
+    border:none;
+}
+
+.add-task button{
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:#d37cff;
+    color:white;
+    cursor:pointer;
+}
+
+ul{
+    list-style:none;
+}
+
+li{
+    background:rgba(255,255,255,0.1);
+    margin:8px 0;
+    padding:10px;
+    border-radius:10px;
+    cursor:pointer;
+}
