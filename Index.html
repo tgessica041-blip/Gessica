@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Focus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="timer-box">
+            <div class="tabs">
+                <button class="active" onclick="mudarTempo(25)">Foco</button>
+                <button onclick="mudarTempo(5)">Descanso curto</button>
+                <button onclick="mudarTempo(15)">Descanso longo</button>
+            </div>
+
+            <h1 id="timer">25:00</h1>
+
+            <label class="switch">
+                <input type="checkbox">
+                <span>Música</span>
+            </label>
+
+            <button id="startBtn" onclick="iniciarTimer()">
+                Começar
+            </button>
+        </div>
+
+        <div class="tarefa-atual">
+            <strong>#Em andamento:</strong>
+            <span id="tarefaAtual">Nenhuma tarefa</span>
+        </div>
+
+        <div class="lista">
+            <h2>Lista de tarefas:</h2>
+
+            <div class="add-task">
+                <input type="text" id="novaTarefa" placeholder="Digite uma tarefa">
+                <button onclick="adicionarTarefa()">Adicionar</button>
+            </div>
+
+            <ul id="listaTarefas"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
